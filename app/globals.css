@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default (dark) theme colors */
+    --background: 240 20% 8%; /* Dark blue background */
+    --foreground: 0 0% 98%; /* Light text */
+    --card: 240 15% 12%; /* Slightly lighter dark blue for cards */
+    --card-foreground: 0 0% 95%;
+    --popover: 240 15% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 262 52% 40%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 240 5% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 262 52% 40%;
+    --radius: 0.75rem;
+
+    /* Custom accent colors for dark theme (lighter shades) */
+    --custom-pink: 330 69% 85%; /* #f1bfd7 */
+    --custom-magenta: 290 70% 85%; /* #f0b8f4 */
+    --custom-peach: 36 98% 82%; /* #fed9a6 */
+    --custom-coral: 18 98% 86%; /* #feccbb */
+    --custom-purple: 262 52% 40%; /* #602e9e */
+  }
+
+  .light {
+    /* Light theme base colors */
+    --background: 0 0% 100%; /* White */
+    --foreground: 240 10% 3.9%; /* Dark gray for text */
+    --card: 0 0% 98%; /* Off-white for cards */
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 262 52% 40%; /* Keep primary as is, it's an accent */
+    --primary-foreground: 0 0% 98%; /* White text on primary */
+    --secondary: 240 4.8% 95.9%; /* Light gray for secondary */
+    --secondary-foreground: 240 5.9% 10%; /* Dark text on secondary */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%; /* Red for destructive */
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%; /* Light gray border */
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    /* Custom accent colors for light theme (lighter, less vibrant shades) */
+    --custom-pink: 330 60% 65%; /* Lighter pink */
+    --custom-magenta: 290 60% 65%; /* Lighter magenta */
+    --custom-peach: 36 70% 70%; /* Lighter peach */
+    --custom-coral: 18 70% 75%; /* Lighter coral */
+    --custom-purple: 262 50% 55%; /* Lighter purple */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-subtle {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  10%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes star-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0; /* Start invisible */
+}
+
+.animate-float-subtle {
+  animation: float-subtle 3s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle var(--animation-duration, 3s) ease-in-out infinite;
+}
+
+.animate-star-float {
+  animation: star-float var(--animation-duration-float, 4.5s) ease-in-out infinite;
+}
