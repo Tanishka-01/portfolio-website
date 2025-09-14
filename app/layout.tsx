@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link
           rel="icon"
-          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23f1bfd7'/><text x='50' y='58' fontFamily='Arial, sans-serif' fontSize='36' fontWeight='900' textAnchor='middle' dominantBaseline='central' fill='%23240a0f'>tw.</text></svg>"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23f1bfd7;stop-opacity:1' /><stop offset='100%25' style='stop-color:%23f0b8f4;stop-opacity:1' /></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad)' stroke='%23602e9e' strokeWidth='3'/><polygon points='35,25 65,25 60,40 55,40 55,75 45,75 45,40 40,40' fill='%23602e9e'/><circle cx='50' cy='20' r='8' fill='%23602e9e'/></svg>"
         />
       </head>
       <body className={inter.className}>
