@@ -11,6 +11,7 @@ export function Experience() {
       description:
         "A key contributor to a multimodal AI research project for wildlife monitoring. My work focused on developing automated data analysis pipelines and applying machine learning models to bioacoustic and aerial data collected for the project.",
       achievements: [
+        "Enhancing MCP with statistical analysis functions and data visualization tools, improving scalability, interpretability, and decision-making in bioacoustic data analysis.",
         "Automated the bioacoustic data analysis workflow by leveraging the Model Context Protocol (MCP) to programmatically control BirdNET for large-scale species identification.",
         "Utilized the Opensoundscape Python library to process and analyze field recordings, applying the BirdNET machine learning model to automatically identify avian species for a comprehensive biodiversity assessment.",
         "Interpreted multimodal data streams, including acoustic recordings and aerial drone imagery, to support research in sensor fusion.",
@@ -59,16 +60,15 @@ export function Experience() {
       titleColor: "text-custom-peach",
     },
     {
-      id: 4, // Web Developer
-      title: "Web Developer",
+      id: 4, // Software Developer (formerly Web Developer)
+      title: "Software Developer",
       company: "Larsen & Toubro (Internship)",
       period: "Apr 2022 - Jul 2022",
-      description:
-        "Spearheaded a project from inception, designing and implementing an automated solution for hostel allocation.",
+      description: "Led the development of an automated hostel allocation system for the Skill Trainer's Academy.",
       achievements: [
-        "Spearheaded a project from inception, laying the foundation for a fully functional system.",
-        "Designed and implemented an automated solution for hostel allocation within the Skill Trainer's Academy, streamlining administrative processes.",
-        "Gained hands-on experience in UI/UX design and front-end development, enhancing user engagement and interface functionality.",
+        "Spearheaded the development of a full-stack hostel allocation system, leading the project from inception to deployment.",
+        "Automated the allocation process, streamlining administrative workflows and reducing manual effort.",
+        "Applied UI/UX design principles and front-end development best practices to improve usability, resulting in smoother user interaction and higher engagement.",
       ],
       titleColor: "text-custom-purple",
     },
